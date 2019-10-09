@@ -1,0 +1,62 @@
+ACCESSION,PAIRED,LINEAGE,ORIGIN,BIOPROJECT,BIOSAMPLE,Reads lenght (bp),LINK1,LINK2,REFERENCE
+ERR2642516,no,M. caprae,NA,PRJEB27266,"	
+SAMEA4732081",51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR264/006/ERR2642516/ERR2642516.fastq.gz,,Brites et al. 2018
+ERR551023,yes,M. caprae,Congo,PRJEB9545,SAMEA2533642,150,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR551/ERR551023/ERR551023_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR551/ERR551023/ERR551023_2.fastq.gz,Malm et al. 2017
+ERR551704,yes,M. caprae,Germany,PRJEB9545,SAMEA2534133,150,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR551/ERR551704/ERR551704_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR551/ERR551704/ERR551704_2.fastq.gz,Malm et al. 2017
+ERR552526,yes,M. caprae,Germany,PRJEB9545,SAMEA2534708,150,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR552/ERR552526/ERR552526_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR552/ERR552526/ERR552526_2.fastq.gz,Malm et al. 2017
+ERR841382,no,M. caprae,NA,PRJEB9003,SAMEA3318466,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR841/ERR841383/ERR841383.fastq.gz,,Domogalla et al. 2013
+SRR650219,yes,M. caprae,Germany,PRJNA186722,SAMN01886640,125,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650219/SRR650219_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650219/SRR650219_2.fastq.gz,Research Center Borstel
+ERR233356,no,M. tuberculosis L1,USA,PRJEB3223,SAMEA1877228,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR233/ERR233356/ERR233356.fastq.gz,,Comas et al. 2013
+ERR1200629,no,M. tuberculosis L1,Ethiopia,PRJEB9201,SAMEA3721555,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/009/ERR1200629/ERR1200629.fastq.gz,,Comas et al. 2013
+ERR234155,yes,M. tuberculosis L1,Germany,PRJEB3223,SAMEA1877280,108,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234155/ERR234155_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234155/ERR234155_2.fastq.gz,Comas et al. 2013
+ERR234238,yes,M. tuberculosis L1,Vietnam,PRJEB3223,SAMEA1877123,74,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234238/ERR234238_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234238/ERR234238_2.fastq.gz,Comas et al. 2013
+ERR234272,yes,M. tuberculosis L1,UK,PRJEB3223,SAMEA1877235,108,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234272/ERR234272_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234272/ERR234272_2.fastq.gz,Comas et al. 2013
+ERR233377,no,M. tuberculosis L1,Nepal,PRJEB3223,SAMEA1877262,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR233/ERR233377/ERR233377.fastq.gz,,
+ERR1200603,no,M. tuberculosis L7,Ethiopia,PRJEB9201,SAMEA3721529,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/003/ERR1200603/ERR1200603.fastq.gz,,Comas et al. 2013
+ERR1200617,no,M. tuberculosis L7,Ethiopia,PRJEB9201,SAMEA3721543,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/007/ERR1200617/ERR1200617.fastq.gz,,Comas et al. 2013
+ERR1200635,no,M. tuberculosis L7,Ethiopia,PRJEB9201,SAMEA3721561,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/005/ERR1200635/ERR1200635.fastq.gz,,Comas et al. 2013
+ERR1200640,no,M. tuberculosis L7,Ethiopia,PRJEB9201,SAMEA3721566,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/000/ERR1200640/ERR1200640.fastq.gz,,Comas et al. 2013
+ERR234097,yes,M. tuberculosis L5,Germany,PRJEB3223,SAMEA1877073,108,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234097/ERR234097_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234097/ERR234097_2.fastq.gz,Comas et al. 2013
+ERR234199,yes,M. tuberculosis L5,Ghana,PRJEB3223,SAMEA1877227,108,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234199/ERR234199_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234199/ERR234199_2.fastq.gz,Comas et al. 2013
+ERR017801,yes,M. tuberculosis L5,Russia,PRJEB2138,SAMEA838030,54,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR017/ERR017801/ERR017801_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR017/ERR017801/ERR017801_2.fastq.gz,Casali et al. 2014
+ERR233366,no,M. tuberculosis L6,Gambia,PRJEB3223,SAMEA1877214,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR233/ERR233366/ERR233366.fastq.gz,,Comas et al. 2013
+ERR234184,yes,M. tuberculosis L6,Germany,PRJEB3223,SAMEA1877142,108,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234184/ERR234184_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234184/ERR234184_2.fastq.gz,Comas et al. 2013
+ERR400537,yes,M. tuberculosis L6,UK,PRJEB5162,SAMEA2297108,100,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR400/ERR400537/ERR400537_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR400/ERR400537/ERR400537_2.fastq.gz,Walker et al. 2015
+SRR998594,yes,M. tuberculosis L6,Mali,PRJNA211637,SAMN02231106,101,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR998/SRR998594/SRR998594_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR998/SRR998594/SRR998594_2.fastq.gz,Broad Institute
+ERR234098,yes,M. tuberculosis L2,China,PRJEB3223,SAMEA1877086,95,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234098/ERR234098_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234098/ERR234098_2.fastq.gz,Comas et al. 2013
+ERR233386,no,M. tuberculosis L2,India,PRJEB3223,SAMEA1877137,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR233/ERR233386/ERR233386.fastq.gz,,Comas et al. 2013
+ERR015616,yes,M. tuberculosis L2,Russia,PRJEB2138,SAMEA838034,54,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR015/ERR015616/ERR015616_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR015/ERR015616/ERR015616_2.fastq.gz,Comas et al. 2013
+ERR233391,no,M. tuberculosis L3,Nepal,PRJEB3223,SAMEA1877085,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR233/ERR233391/ERR233391.fastq.gz,,Comas et al. 2013
+ERR233360,no,M. tuberculosis L3,USA,PRJEB3223,SAMEA1877273,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR233/ERR233360/ERR233360.fastq.gz,,Comas et al. 2013
+ERR234153,yes,M. tuberculosis L3,Germany,PRJEB3223,SAMEA1877096,100,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234153/ERR234153_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234153/ERR234153_2.fastq.gz,Comas et al. 2013
+ERR233358,no,M. tuberculosis L4,USA,PRJEB3223,SAMEA1877249,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR233/ERR233358/ERR233358.fastq.gz,,Comas et al. 2013
+ERR1200614,no,M. tuberculosis L4,Ethiopia,PRJEB9201,SAMEA3721540,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/004/ERR1200614/ERR1200614.fastq.gz,,Comas et al. 2013
+ERR233373,no,M. tuberculosis L4,UK,PRJEB3223,SAMEA1877102,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR233/ERR233373/ERR233373.fastq.gz,,Comas et al. 2013
+ERR233379,no,M. tuberculosis L4,Nepal,PRJEB3223,SAMEA1877255,51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR233/ERR233379/ERR233379.fastq.gz,,Comas et al. 2013
+ERR234154,yes,M. tuberculosis L4,Germany,PRJEB3223,SAMEA1877276,108,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234154/ERR234154_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234154/ERR234154_2.fastq.gz,Comas et al. 2013
+ERR125602,yes,M. bovis,UK,PRJEB3011,SAMEA1523655,70,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR125/ERR125602/ERR125602_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR125/ERR125602/ERR125602_2.fastq.gz,Trewby et al. 2016
+SRR5216693,yes,M. bovis,New Zeland,PRJNA363037,SAMN06252373,100,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR521/003/SRR5216693/SRR5216693_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR521/003/SRR5216693/SRR5216693_2.fastq.gz,Crispell et al. 2017
+ERR551009,yes,M. bovis,Germany,PRJEB9680,SAMEA2533630,101,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR551/ERR551009/ERR551009_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR551/ERR551009/ERR551009_2.fastq.gz,Walker et al. 2015
+ERR552138,yes,M. bovis,Republic of the Congo,PRJEB9545,SAMEA2534440,150,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR552/ERR552138/ERR552138_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR552/ERR552138/ERR552138_2.fastq.gz,Malm et al. 2017
+ERR400386,yes,M. bovis,UK,PRJEB5162,SAMEA2296957,100,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR400/ERR400386/ERR400386_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR400/ERR400386/ERR400386_2.fastq.gz,Walker et al. 2015
+WT_S18_L001-4,yes,M. bovis,AF2122,,,150,,,
+SRR1173570,yes,M. bovis ,Uganda(BZ),PRJNA233393,SAMN02567761,101,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR117/000/SRR1173570/SRR1173570_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR117/000/SRR1173570/SRR1173570_2.fastq.gz,Wanzala et al. 2015
+SRR1173284,yes,M. bovis ,Uganda(B2),PRJNA233394,SAMN02567762,101,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR117/004/SRR1173284/SRR1173284_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR117/004/SRR1173284/SRR1173284_2.fastq.gz,Wanzala et al. 2015
+SRR022532,no,M. bovis ,Ravenel,SRP001062,SAMN00002970,36,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022532/SRR022532.fastq.gz,,
+ERR027294,yes,M. microti,UK,PRJEB2091,SAMEA806956,108,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR027/ERR027294/ERR027294_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR027/ERR027294/ERR027294_2.fastq.gz,The Wellcome Sanger Institute
+ERR2659164,yes,M. microti,Italy,PRJEB27266,SAMEA4752948,200,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR265/004/ERR2659164/ERR2659164_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR265/004/ERR2659164/ERR2659164_2.fastq.gz,Brites et al. 2018
+ERR234675,yes,M. orygis,Russia,PRJEB2138,SAMEA1707404,100,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234675/ERR234675_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234675/ERR234675_2.fastq.gz,Casali et al. 2014
+ERR2659153,yes,M. orygis,Australia,PRJEB27266,SAMEA4752939,251,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR265/003/ERR2659153/ERR2659153_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR265/003/ERR2659153/ERR2659153_2.fastq.gz,Brites et al. 2018
+SRR3500411,yes,M. mungi,Botswana,PRJNA320514,SAMN04942516,251,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR350/001/SRR3500411/SRR3500411_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR350/001/SRR3500411/SRR3500411_2.fastq.gz,Alexander et al. 2016
+SRR1239337,yes,M. pinnipedii,Australia,PRJNA244633,SAMN02727911,301,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR123/007/SRR1239337/SRR1239337_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR123/007/SRR1239337/SRR1239337_2.fastq.gz,Bos et al. 2014
+ERR015598,yes,M. canetti (CIPT140010059) STB-A,NA,PRJEB2160,SAMEA836713,37,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR015/ERR015598/ERR015598_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR015/ERR015598/ERR015598_2.fastq.gz,Wellcome Sanger Institute
+SRR011186,no,M. canetii,NA,PRJNA39969,SAMN00102920,76,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR011/SRR011186/SRR011186.fastq.gz,,Broad Institute
+ERR1336826,yes,M. canetii,NA,PRJEB13143,SAMEA3905803,108,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR133/006/ERR1336826/ERR1336826_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR133/006/ERR1336826/ERR1336826_2.fastq.gz,Institut Pasteur
+ERR313114,yes,M. canetii,Djibouti,PRJEB1842,SAMEA2144248,250,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR313/ERR313114/ERR313114_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR313/ERR313114/ERR313114_2.fastq.gz,"Blouin Y et al. 2014 (Institut de Génétique et Microbiologie, Université Paris Sud)"
+SRR6650709,yes,M. canetti (NYS IDR1300035880),,PRJNA432184,SAMN08437197,250,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR665/009/SRR6650709/SRR6650709_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR665/009/SRR6650709/SRR6650709_2.fastq.gz,New York State Department of Health
+ERR1109376,no,M. canetti (CIPT 140070010) STB-K-S,,PRJEB11645,SAMEA3643870,101,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR110/006/ERR1109376/ERR1109376.fastq.gz,,European Molecular Biology Laboratory
+ERR1109377,no,M. canetti (CIPT 140070010) STB-K-R,,PRJEB11645,SAMEA3643871,101,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR110/007/ERR1109377/ERR1109377.fastq.gz,,European Molecular Biology Laboratory
+ERR017778,yes,BCG,Russia,PRJEB2138,SAMEA837978,54,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR017/ERR017778/ERR017778_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR017/ERR017778/ERR017778_2.fastq.gz,Casali et al. 2014
+ERR161048,yes,BCG,Malawi,PRJEB2794,SAMEA1485268,100,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR161/ERR161048/ERR161048_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR161/ERR161048/ERR161048_2.fastq.gz,Guerra-Assuncao et al. 2015
+ERR234151,yes,BCG,Laboratory -BCG strain,PRJEB3223,SAMEA1877109,100,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234151/ERR234151_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/ERR234151/ERR234151_2.fastq.gz,Comas et al. 2013
+SRR3647355,yes,BCG,NA,PRJNA270004,SAMN03253093,125,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR364/005/SRR3647355/SRR3647355_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR364/005/SRR3647355/SRR3647355_2.fastq.gz,PATRIC
