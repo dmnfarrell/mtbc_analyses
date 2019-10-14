@@ -1,0 +1,13 @@
+##gff-version 3
+
+RD900MAF	pknH1	gene	783	2663	.	-	.	ID=gene:BQ2027_MB1297C;Name=pknh1;biotype=protein_coding;db_xref=GeneID:1090581;gene=pknh1;
+RD900MAF	kinase	gene	1726	2663	.	-	.	ID=gene:pknH1_kinase;Parent=BQ2027_MB1297C;Name=kinase;biotype=protein_coding;db_xref=GeneID:1090581;gene=kinase;color=#a569bd
+RD900MAF	pro-region	domain	1612	1772	.	-	.	ID=gene:pknH1_proline;Name=proline-rich;biotype=protein_coding;db_xref=GeneID:1090581;gene=prolinerich;color=#48c9b0  
+RD900MAF	tbd2	gene	2907	5303	.	-	.	ID=gene:BQ2027_MB1297CA;Name=tbd1;biotype=protein_coding;db_xref=GeneID:1090581;gene=tbd1;
+RD900MAF	pknh2	gene	5314	6981	.	-	.	ID=gene:BQ2027_MB1297CB;Name=pknh2;biotype=protein_coding;db_xref=GeneID:1090581;gene=pknh2;
+RD900MAF	kinase	gene	6157	6981	.	-	ID=gene:pknH2_kinase;Parent=BQ2027_MB1297B;Name=kinase;biotype=protein_coding;db_xref=GeneID1090581;gene=kinase;color=#a569bd 
+RD900MAF	pro-region	domain	6081	6153	.	-	.	ID=gene:pknH2_proline;Name=proline-rich;biotype=protein_coding;db_xref=GeneID:1090581;gene=proline-rich;color=#48c9b0 
+RD900MAF	pknh2 del	gene	6395	6396	.	-	.	ID=gene:
+RD900MAF	MAF_RS06715	gene	7322	8514	.	-	.	ID=gene:
+
+
