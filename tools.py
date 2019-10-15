@@ -330,4 +330,16 @@ def get_url_from_path(url):
     link = os.path.join(url,label+'_genomic.fna.gz')
     return link
 
- 
+def get_assembly_info(searchterm):
+    handle = Entrez.esearch(db="assembly", term=searchterm,retmax=8000)
+    record = Entrez.read(handle)    
+    res=[]
+    for id in record['IdList']:
+        esummary_handle = Entrez.esummary(db="assembly", id=id, report="full")
+        esummary_record = Entrez.read(esummary_handle)
+        summ = esummary_record['DocumentSummarySet']['DocumentSummary'][0]
+        #print(summ.keys())
+        s = ({i:summ[i] for i in summ.keys()})
+        res.append(s)
+    df=pd.DataFrame(res)#,columns=['accession','species','assembly_id','biosample','bioproject'])
+    return df
