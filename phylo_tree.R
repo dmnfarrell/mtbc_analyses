@@ -48,5 +48,5 @@ add.scale.bar(lwd=3, cex=2, xpd=TRUE)
 dev.off()
 
 # ace function for calculating parsimony using pknh blast results
-# we provide a vector containing the states - rd900 variants and the phylogeny from species similarity
+# we provide a vector containing the states - rd900 variants and the phylogeny from species similarity  
 ace(states, njtree)
