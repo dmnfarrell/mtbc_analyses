@@ -323,8 +323,8 @@ def get_assemblies(term=None, ids=None, download=True, path='assemblies'):
             urllib.request.urlretrieve(link, f'{label}.fna.gz')
     return links
 
-def get_url_from_path(url):
-    """get full path for genomic fasta from url"""
+def get_url_from_path(url, type='genomic'):
+    """Get full path for genomic/protein fasta from url"""
     
     label = os.path.basename(url)
     link = os.path.join(url,label+'_genomic.fna.gz')
