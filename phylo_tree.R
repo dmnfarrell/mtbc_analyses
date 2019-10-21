@@ -1,11 +1,24 @@
 #build phylogenetic tree for MTBC genomes
 
 library(seqinr)
-library(phangorn)
+#library(phangorn)
 library("ape")
+library("phytools")
 
-### read data
 setwd('~/gitprojects/rd900')
+
+#get region hits from blast analysis
+
+region_hits = read.table('rd900_region_hits.csv',sep=',',header=TRUE)
+rownames(region_hits) <- region_hits$id
+# convert to discrete states
+states <- region_hits[c('pknh1','pknh1.proregion','pknh2_sensor','tbd2')]
+states[states>0] = 1
+states <- apply( states , 1 , paste , collapse = "-" )
+states <- factor(states)
+
+### read ANI data
+
 #anim <- read.table('ANIm_out/ANIm_percentage_identity.tab',sep='\t',header=TRUE,row.names = 1)
 anim <- read.table('anim_matrix.csv',sep=',',header=TRUE)
 #rownames(anim) <- paste0(1:nrow(anim), "_", anim$query)
@@ -31,16 +44,17 @@ tipcol <- rep('black', length(njtree$tip.label))
 cats <- unique(anim$query)
 
 # make a vector of color we want:
-colorsList <-c("orange", "darkolivegreen4", "red", "orange", "turquoise", "red",
+speciescolors <-c("orange", "darkolivegreen4", "red", "orange", "turquoise", "red",
                "purple", "darkgreen", "blue","darkblue")
 for(i in 1:length(cats)){
-  tipcol[grep(cats[i], njtree$tip.label)] <- colorsList[i]
+  tipcol[grep(cats[i], njtree$tip.label)] <- speciescolors[i]
 }
 
 # Plotting the phylogeny
 plot(rooted, label.offset=0.01, edge.width=1.5, #type='fan',
      main="Mycobacterium Species Tree", 
      tip.color=tipcol)
+dev.off()
 
 # Add coloured shapes for tips
 #tiplabels(pch=19, 
@@ -50,20 +64,17 @@ plot(rooted, label.offset=0.01, edge.width=1.5, #type='fan',
 # Set the margins
 #par(mar=c(1,1,1,0))
 
-dev.off()
-
-#get region hits from blast analysis
-region_hits = read.table('rd900_region_hits.csv',sep=',',header=TRUE)
-rownames(region_hits) <- region_hits$id
-# convert to discrete states
-states <- region_hits[c('pknh1','pknh1.proregion','pknh2_sensor','tbd2')]
-states[states>0] = 1
-states <- apply( states , 1 , paste , collapse = "-" )
+plotTree(rooted,lwd=1,fsize=0.6)
+cols<-setNames(c('red','blue','green2','orange'),levels(states))
+tiplabels(pie=to.matrix(states[rooted$tip.label], levels(states)),
+          piecol=cols, cex=0.3)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.8*par()$usr[2],
+                  y=60,fsize=1.2)
+#plotBranchbyTrait(rooted,states[rooted$tip.label], mode="tips", palette="heat.colors")
 
 # ace function for calculating parsimony using pknh blast results
 # we provide a vector containing the states - rd900 variants and 
-# the phylogeny from species similarity  
+# the phylogeny from species similarity
 
 fit <- ace(states, rooted, type="discrete")
-?ace
 
