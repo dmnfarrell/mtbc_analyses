@@ -1,5 +1,7 @@
-MTBC RD900 project
+## MTBC RD900 project
 
 Links:
 
-* http://evomics.org/wp-content/uploads/2019/01/Orthology-and-Paralogy-lab.pdf
+* https://www.ncbi.nlm.nih.gov/gene/1090581
+* https://www.uniprot.org/uniprot/Q7U095
+
