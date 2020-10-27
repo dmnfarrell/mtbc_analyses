@@ -1,0 +1,231 @@
+LOCUS       sigk_locus              2932 bp    DNA     linear   BCT 27-FEB-2015
+DEFINITION  Mycobacterium tuberculosis H37Rv complete genome.
+ACCESSION   sigk_locus REGION: 532357..535288
+
+FEATURES             Location/Qualifiers
+     source          1..2932
+                     /organism="Mycobacterium tuberculosis H37Rv"
+                     /mol_type="genomic DNA"
+                     /strain="H37Rv"
+                     /type_material="type strain of Mycobacterium tuberculosis"
+                     /db_xref="taxon:83332"
+     gene            40..555
+                     /locus_tag="Rv0443"
+     CDS             40..555
+                     /locus_tag="Rv0443"
+                     /experiment="EXISTENCE: identified in proteomics study"
+                     /note="Rv0443, (MTV037.07), len: 171 aa. Conserved
+                     protein,highly similar to AL049863|SC5H1_23|T35339
+                     hypothetical protein from Streptomyces coelicolor (171
+                     aa), FASTA scores: opt: 561, E(): 2.3e-32, (49.7% identity
+                     in 165 aa overlap); and CAC42482.1|AJ318385 hypothetical
+                     protein from Amycolatopsis mediterranei (163 aa)."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Conserved protein"
+                     /protein_id="CCP43174.1"
+                     /db_xref="GI:444893920"
+                     /db_xref="EnsemblGenomes-Gn:Rv0443"
+                     /db_xref="EnsemblGenomes-Tr:CCP43174"
+                     /db_xref="InterPro:IPR007061"
+                     /db_xref="InterPro:IPR027369"
+                     /db_xref="UniProtKB/TrEMBL:O53728"
+                     /translation="MASTDAAAQELLRDAFTRLIEHVDELTDGLTDQLACYRPTPSAN
+                     SIAWLLWHSARVQDIQVAHVAGVEEVWTRDGWVDRFGLDLPRHDTGYGHRPEDVAKVR
+                     APADLLSGYYHAVHKLTLEYIAGMTADELSRVVDTSWNPPVTVSARLVSIVDDCAQHL
+                     GQAAYLRGIAR"
+     gene            complement(735..1433)
+                     /gene="rskA"
+                     /locus_tag="Rv0444c"
+     CDS             complement(735..1433)
+                     /gene="rskA"
+                     /locus_tag="Rv0444c"
+                     /experiment="EXISTENCE: identified in proteomics study"
+                     /note="Rv0444c, (MTV037.08c), len: 232 aa. RskA, regulator
+                     of SigK (See Said-Salim et al., 2006); C-terminus similar
+                     to P12752|Y24K_STRGR hypothetical 24.7 kDa protein from
+                     Streptomyces griseus (238 aa), FASTA scores: opt: 207,
+                     E(): 2.2e-05, (32.9% identity in 158 aa overlap). Cleaved
+                     by Rip|Rv2869c, in M. tuberculosis Erdman (See Sklar et
+                     al.,2010)."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Anti-sigma factor RskA (regulator of sigma K)"
+                     /protein_id="CCP43175.1"
+                     /db_xref="GI:444893921"
+                     /db_xref="EnsemblGenomes-Gn:Rv0444c"
+                     /db_xref="EnsemblGenomes-Tr:CCP43175"
+                     /db_xref="GOA:P9WGX5"
+                     /db_xref="InterPro:IPR018764"
+                     /db_xref="PDB:4NQW"
+                     /translation="MTEHTDFELLELATPYALNAVSDDERADIDRRVAAAPSPVAAAF
+                     NDEVRAVRETMAVVSAATTAEPPAHLRTAILDATKPEVRRQSRWRTAAFASAAAIAVG
+                     LGAFGLGVLTRPSPPPTVAEQVLTAPDVRTVSRPLGAGTATVVFSRDRNTGLLVMNNV
+                     APPSRGTVYQMWLLGGAKGPRSAGTMGTAAVTPSTTATLTDLGASTALAFTVEPGTGS
+                     PQPTGTILAELPLG"
+     gene            complement(1477..2040)
+                     /gene="sigK"
+                     /locus_tag="Rv0445c"
+     CDS             complement(1477..2040)
+                     /gene="sigK"
+                     /locus_tag="Rv0445c"
+                     /experiment="EXISTENCE: identified in proteomics study"
+                     /note="Rv0445c, (MTV037.09c), len: 187 aa.
+                     sigK,alternative RNA polymerase sigma factor (see
+                     citations below), highly similar to others e.g.
+                     5531433|CAB50938.1|AL096849|T36745 probable RNA polymerase
+                     sigma factor from Streptomyces coelicolor (185 aa);
+                     NP_105607.1|14024791|BAB51393.1|AP003005 RNA polymerase
+                     sigma factor from Mesorhizobium loti (179 aa);
+                     1654108|AAB17906.1|U11283|A58883 probable transcription
+                     initiation factor sigma E from Rhodobacter phaeroides (168
+                     aa), FASTA scores: opt: 299, E(): 2e-14, (32.7% identity
+                     in 168 aa overlap); Q45585|SIGW_BACSU RNA polymerase sigma
+                     factor SIGW from Bacillus subtilis (187 aa), FASTA scores:
+                     opt: 213, E(): 2.9e-08, (26.8% identity in 179 aa
+                     overlap); etc."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Alternative RNA polymerase sigma factor SigK"
+                     /protein_id="CCP43176.1"
+                     /db_xref="GI:444893922"
+                     /db_xref="EnsemblGenomes-Gn:Rv0445c"
+                     /db_xref="EnsemblGenomes-Tr:CCP43176"
+                     /db_xref="GOA:P9WGH7"
+                     /db_xref="InterPro:IPR007627"
+                     /db_xref="InterPro:IPR007630"
+                     /db_xref="InterPro:IPR011991"
+                     /db_xref="InterPro:IPR013324"
+                     /db_xref="InterPro:IPR013325"
+                     /db_xref="InterPro:IPR014284"
+                     /db_xref="PDB:4NQW"
+                     /translation="MTGPPRLSSDLDALLRRVAGHDQAAFAEFYDHTKSRVYGLVMRV
+                     LRDTGYSEETTQEIYLEVWRNASEFDSAKGSALAWLLTMAHRRAVDRVRCEQAGNQRE
+                     VRYGAANVDPASDVVADLAIAGDERRRVTECLKALTDTQRQCIELAYYGGLTYVEVSR
+                     RLAANLSTIKSRMRDALRSLRNCLDVS"
+     gene            complement(2089..2859)
+                     /locus_tag="Rv0446c"
+     CDS             complement(2089..2859)
+                     /locus_tag="Rv0446c"
+                     /experiment="EXISTENCE: identified in proteomics study"
+                     /note="Rv0446c, (MTV037.10c), len: 256 aa. Possible
+                     conserved transmembrane protein, similar at N-terminus to
+                     U1740AF|U15183|MLU15183_40 from Mycobacterium leprae (117
+                     aa), FASTA scores: opt: 175, E(): 2.5e-05, (62.5% identity
+                     in 40 aa overlap); and at C-terminus to AL021529|SC10A5_3
+                     from Streptomyces coelicolor (226 aa), FASTA scores: opt:
+                     207, E(): 9.8e-07, (34.2% identity in 114 aa overlap).
+                     Also similar to others hypothetical proteins e.g.
+                     AAK04680.1|AE006291_14|AE006291 hypothetical protein from
+                     Lactococcus lactis subsp. lactis (257 aa)."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Possible conserved transmembrane protein"
+                     /protein_id="CCP43177.1"
+                     /db_xref="GI:444893923"
+                     /db_xref="EnsemblGenomes-Gn:Rv0446c"
+                     /db_xref="EnsemblGenomes-Tr:CCP43177"
+                     /db_xref="GOA:O53731"
+                     /db_xref="InterPro:IPR001104"
+                     /db_xref="InterPro:IPR010721"
+                     /db_xref="UniProtKB/TrEMBL:O53731"
+                     /translation="MVTSVSALAVAVVHSVAFAIGRRIGRYNVVDVVWGLGFVAVAVA
+                     AATLGHGDPVRRWLLLALVSTWGLRLSWHMYRKTAGQGEDPRYADLLRGATPVQALRK
+                     VFGLQGLLTLFVSFPLQLSAVTGPTPKPLLAVGGVGLAVWLVGITFEAVGDWQLWVFK
+                     SDPANRGVIMDRGLWAWTRHPNYFGDACVWWGLWLITINDWAPLATVGSPLLMTYLLV
+                     DVSGARLTERYLKGRPGFAEYQRRTAYFVPRPPRSARR"
+     gene            complement(2868..>2932)
+                     /gene="ufaA1"
+                     /locus_tag="Rv0447c"
+     CDS             complement(2868..>2932)
+                     /gene="ufaA1"
+                     /locus_tag="Rv0447c"
+                     /note="Rv0447c, (MTV037.11c), len: 427 aa (start
+                     uncertain). Probable
+                     ufaA1,cyclopropane-fatty-acyl-phospholipid synthase,
+                     similar to others e.g.
+                     NP_102178.1|14021351|BAB47964.1|AP002994
+                     cyclopropane-fatty-acyl-phospholipid synthase from
+                     Mesorhizobium loti (378 aa);
+                     B82240|9655593|AAF94281.1|AE004192
+                     cyclopropane-fatty-acyl-phospholipid synthase from Vibrio
+                     cholerae (432 aa); P30010|CFA_ECOLI
+                     cyclopropane-fatty-acyl-phospholipid synthase from
+                     Escherichia coli strain K-12 (382 aa); X55704|PPLPD_3
+                     LPD-3 from P.putida (394 aa), FASTA scores: opt: 556, E():
+                     2.8e-30, (33.3% identity in 387 aa overlap);
+                     AE0005|HPAE000557_9 from Helicobacter pylori (389
+                     aa),FASTA scores: opt: 539, E(): 3.9e-29, (34.3% identity
+                     in 382 aa overlap)."
+                     /codon_start=3
+                     /transl_table=11
+                     /product="Probable cyclopropane-fatty-acyl-phospholipid
+                     synthase UfaA1 (cyclopropane fatty acid synthase) (CFA
+                     synthase)"
+                     /protein_id="CCP43178.1"
+                     /db_xref="GI:444893924"
+                     /db_xref="EnsemblGenomes-Gn:Rv0447c"
+                     /db_xref="EnsemblGenomes-Tr:CCP43178"
+                     /db_xref="GOA:O53732"
+                     /db_xref="InterPro:IPR003333"
+                     /db_xref="InterPro:IPR029063"
+                     /db_xref="UniProtKB/TrEMBL:O53732"
+                     /translation="MTVETSQTPSAAIDSDRWPAVAKVPRGPLAAASAAIANRLLRRT
+                     ATHLPLRLVYSDGTATGAADPRAPSLFIHRPDALARRIGRHGLIGFGESYMAGEWSSK
+                     ELTRVLTVLAGSVDELVPRSLHWLRPITPTFRPSWPDHSRDQARRNIAVHYDLSNDLF
+                     AAFLDETMTYSCAMFTDLLAQPTPAWTELAAAQRRKIDRLLDVAGVQQGSHVLEIGTG
+                     WGELCIRAAARGAHIRSVTLSVEQQRLARQRVAAAGFGHRVEIDLCDYRDVDGQYDSV
+                     VSVEMIEAVGYRSWPRYFAALEQLVRPGGPVAIQAITMPHHRMLATRHTQTWIQKYIF
+                     PGGLLPSTQAIIDITGQHTGLRIVDAASLRPHYAETLRLWRERFMQRRDGLAHLGFDE
+                     VFARMWELYLAYSEAGFRSGYLDVYQWTLIREGPP"
+ORIGIN      
+        1 cagctgaggg tctgccacct gccccgtaat gtcgctggta tggcaagcac cgacgccgcg
+       61 gcccaagagt tgctccgcga cgcgttcacc cggttgatcg aacatgtcga cgaactcacc
+      121 gacggcctca ccgaccaact cgcctgctac cgcccgaccc ccagcgccaa cagcattgcg
+      181 tggctgctct ggcacagcgc ccgggtgcag gatatacagg tcgcccatgt ggccggcgtg
+      241 gaagaggtgt ggacccgcga cggttgggtg gaccgctttg ggttagatct gccgcggcac
+      301 gacaccggat atggacaccg tcccgaggat gtggcgaagg tacgggcacc cgccgacctg
+      361 ctgtcggggt actaccacgc ggtgcataaa ctgaccctgg aatacatcgc tggcatgacc
+      421 gcagatgagt tgtcccgtgt ggtggatacc agttggaatc cgccggttac cgtcagcgca
+      481 cggttggtga gcatcgtcga cgactgcgct cagcacctcg ggcaggccgc ctacctgcgg
+      541 gggatagccc gataacggcg acatccgccg gatcgctgag gcgatggtca gctacgccga
+      601 agatcgcctg caccgatggt tacctgacgc tagccggcag cgccgcccta gtggtacccg
+      661 gcgtgttcgt cgcgatgctg ggcaccattg tcgcgccgag actgcggtga ggggccgggg
+      721 tgtgcgtcct cggctcaccc gagcggcagc tcggccaaga tggtaccggt gggctgtggt
+      781 gatccggtgc cgggttcgac ggtgaatgcc agtgcggtcg aggctccgag atcggtcagc
+      841 gtcgccgtcg tcgagggcgt caccgccgcg gtgcccatcg tccccgccga cctcggccct
+      901 ttggcccctc ccagcagcca catctgatac acggttcccc gggatggtgg cgccacattg
+      961 ttcatcacca gcagacctgt gttgcggtcg cgggagaaca ccaccgtggc cgtcccggcg
+     1021 cccagtgggc gagagaccgt ccgtacgtcc ggcgccgtca gaacttgctc ggccacggtg
+     1081 gggggtggcg atggccgggt cagcaccccc aggccgaacg cccccagccc cacagcgatc
+     1141 gccgctgcgg acgcaaaggc tgccgtacgc cagcgtgatt ggcgcctaac ctcgggcttg
+     1201 gtcgcatcca ggatggccgt ccgcagatgt gctggcggct cggcggtggt ggccgccgag
+     1261 acgacggcca tcgtctcgcg gacggctcga acttcgtcgt tgaaagccgc ggctaccggc
+     1321 gagggcgcgg cggccacccg tcggtcgatg tcggctcgtt catcgtcgga cacagcgttc
+     1381 agggcatacg gggtagccag ctcgagcagc tcaaaatcgg tatgttcagt catgagcgcc
+     1441 gctctcccaa cgcatcgctt cgctcggccg gcgcagtcat gacacgtcca ggcagttgcg
+     1501 caggctgcgc agggcgtcgc gcatgcggga tttgatggtc gacagattgg ccgctaaccg
+     1561 ccgcgaaact tcgacatacg tcagcccgcc gtagtaggcc agttcgatgc actgccgctg
+     1621 cgtgtcggtc aacgccttga ggcactcggt cacccggcgc cgctcatcac cggcgatcgc
+     1681 caggtcggcg acgacgtcac tcgcgggatc gacgttggcc gcaccatagc gcacttcccg
+     1741 ctggttgccg gcttgctcgc aacggactcg gtcgacagcg cgccggtggg ccatggtcaa
+     1801 aagccaggcc aacgcggaac ctttggcgga gtcaaactcc gacgcgttcc gccacacctc
+     1861 aagatagatc tcctgggtgg tttcttcgct gtagccggta tcacgcagca cccgcatcac
+     1921 cagtccatac acccgcgact tggtgtggtc gtagaattcg gcgaatgcgg cctggtcgtg
+     1981 accagcgacc cggcgcaaca gggcgtccag gtcgctgctc agccgtggcg gtccggtcat
+     2041 cgatgggtag cctatcgcca gccggcgccg tgatggtcaa gccggtcatc accgacgcgc
+     2101 cgatcgcggt ggccggggca cgaaataggc tgttcgcctt tgatattcgg cgaaaccggg
+     2161 gcgacccttc aggtatctct cagtcagccg ggctccgctg acgtccacca gcaggtaggt
+     2221 catcagcagc ggcgaaccca ccgtggccag cggcgcccag tcgttgatcg tgatcaacca
+     2281 caacccccac cagacacagg catcgccgaa gtagttgggg tgacgcgtcc aggcccacag
+     2341 gccgcggtcc atgatgaccc cgcgattggc cgggtcggat ttgaataccc acagttgcca
+     2401 atctcccacc gcttcgaagg tgataccgac cagccacacg gctaagccca cgcccccaac
+     2461 agccagtaac ggcttcggcg tcggcccggt gactgcggaa agctgcagcg ggaatgagac
+     2521 gaacaacgtc aggaggccct gtaatccgaa gaccttgcgc aatgcctgca caggcgtggc
+     2581 accgcgcagc aggtcggcgt agcggggatc ctccccctga ccggctgtct tgcggtacat
+     2641 gtgccagctc agccgcagac cccaggtcga caccaacgct agtagcagcc atcggcgaac
+     2701 cgggtcgccg tggccgagcg tcgcggcggc gacggcgacg gcgacgaaac ccaagcccca
+     2761 taccacgtcg acgacgttgt accggccgat gcggcggccg atcgcaaacg ccaccgaatg
+     2821 caccacggcc acagccaaag ccgacacgct ggttaccacg acgatgttca cggggggccc
+     2881 tcgcggatca acgtccactg gtagacgtcc agatagcccg accggaagcc cg
+//

@@ -69,6 +69,13 @@ def fasta_to_dataframe(infile, header_sep=None, key='name', seqkey='sequence'):
     df[key] = df[key].str.replace('|','_')
     return df
 
+def make_blast_db(infile, out='test'):
+    """make blast db"""
+    
+    cmd = 'gunzip -c {i} | makeblastdb -in - -dbtype nucl -out blastdb/{o} -title test'.format(i=infile,o=out)
+    subprocess.check_output(cmd, shell=True)
+    return
+
 def get_blast_results(filename):
     """
     Get blast results into dataframe. Assumes column names from local_blast method.
@@ -211,80 +218,6 @@ def search_genbank(term='', filt=None):
     result = Entrez.read(request)
     idlist = result['IdList']
     return idlist
-
-#phylo trees
-
-def get_tree(aln, kind='nj'):
-    from Bio.Phylo.TreeConstruction import DistanceCalculator,DistanceTreeConstructor
-    calculator = DistanceCalculator('identity')
-    dm = calculator.get_distance(aln)
-    constructor = DistanceTreeConstructor()
-    tree = constructor.nj(dm)
-    return dm, tree
-
-def clear_clades(tree):
-    names = {}
-    for idx, clade in enumerate(tree.find_clades()):
-        if 'Inner' in clade.name :
-            clade.name = ''
-
-        names[clade.name] = clade
-    return names
-
-def draw_tree(tree, root=None, labels=None, clear=True, title=''):
-    f,ax=plt.subplots(figsize=(10,8))
-    if clear == True:
-        try:
-            clear_clades(tree)
-        except:
-            pass
-    if root != None:
-        tree.root_with_outgroup(root)
-    if labels != None:
-        for clade in tree.get_terminals():
-            key = clade.name
-            if key in labels:
-                clade.name = '%s; %s' %(key,labels[key])
-                #clade.name = labels[key]
-
-    Phylo.draw(tree,axes=ax,axis=('off',),branch_labels=None,show_confidence=False)
-    #Phylo.draw_graphviz(tree,axes=ax,node_size=0)
-    ax.set_title(title,fontsize=16)
-    return f, tree
-
-def show_alignment(aln, diff=False, offset=0):
-    """
-    Show a sequence alignment
-        Args:
-            aln: alignment
-            diff: whether to show differences
-    """
-
-    ref = aln[0]
-    l = len(aln[0])
-    n=60
-    chunks = [(i,i+n) for i in range(0, l, n)]
-    for c in chunks:
-        start,end = c
-        lbls = np.arange(start,end,10)-offset
-        print (('%-21s' %'name'),''.join([('%-10s' %i) for i in lbls]))
-        print (('%21s' %ref.id[:20]), ref.seq[start:end])
-
-        if diff == True:
-            for a in aln[1:]:
-                diff=''
-                for i,j in zip(ref,a):
-                    if i != j:
-                        diff+=j
-                    else:
-                        diff+='-'
-                name = a.id[:20]
-                print (('%21s' %name), diff[start:end])
-        else:
-            for a in aln[1:]:
-                name = a.id[:20]
-                print (('%21s' %name), a.seq[start:end])
-    return
 
 def get_assembly_summary(id):
 
