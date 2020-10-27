@@ -1,0 +1,31 @@
+,tag,gene,category,change,log2FoldChange,log2FC
+0,Mb2836,Mb2836,insertion seqs and phages,down,-2.73477276804155,-1.731626555
+1,Mb0719,Mb0719,conserved hypothetical protein,down,-2.2508125768435203,-1.681501212
+2,Mb0718,Mb0718,conserved hypothetical protein,down,-2.17309711947768,-1.99636743
+3,Mb2834,Mb2834,conserved hypothetical protein,down,-2.13200489738376,-1.468799385
+4,Mb1904,Mb1904,conserved hypothetical protein,down,-1.7864431270869698,4.044841763
+5,Mb2621,fadD9,lipid metabolism,down,-1.69178379709886,-1.864213801
+6,Mb1210,fdxC,intermediate metabolism and respiration,down,-1.5920544477185903,-1.051250625
+7,Mb1124,desA2,lipid metabolism,down,-1.28801438109564,-1.077495774
+8,Mb2324,Mb2324,conserved hypothetical protein,up,1.46589123708506,1.042273685
+9,Mb0282,Mb0282,conserved hypothetical protein,up,1.4758551786460399,-2.162641418
+10,Mb2555,vapb17,"virulence, detoxification,adaptation",up,1.6375734680175302,1.014379465
+11,Mb0174,yrbE1B,"virulence, detoxification,adaptation",up,1.71238267675868,1.158751778
+12,Mb3389,Mb3389,conserved hypothetical protein,up,1.71837838785259,1.3575857569999998
+13,Mb0173,yrbE1A,"virulence, detoxification,adaptation",up,1.72753090022744,1.123409413
+14,Mb1079,Mb1079,intermediate metabolism and respiration,up,1.7327334358451203,1.112213485
+15,Mb2899,dipZ,intermediate metabolism and respiration,up,1.7939465064454299,5.064778347
+16,Mb2076,Mb2076,conserved hypothetical protein,up,1.8046849840756203,1.162759354
+17,Mb0176,mce1B,"virulence, detoxification,adaptation",up,1.9183085882939,1.2097943070000001
+18,Mb2275,Mb2275,intermediate metabolism and respiration,up,1.95019575138714,1.270896634
+19,Mb3657,Mb3657,conserved hypothetical protein,up,1.98339424882772,1.4338705980000002
+20,Mb0175,mce1A,"virulence, detoxification,adaptation",up,2.00291866259023,1.2551738159999999
+21,Mb2898,mpt83,cell wall and cell processes,up,2.03806589929933,5.657656509
+22,Mb1576,fadD11,lipid metabolism,up,2.04410372875259,1.5676520809999999
+23,Mb1576,fadD11,lipid metabolism,up,2.04410372875259,3.113339758
+24,Mb0178,mce1D,"virulence, detoxification,adaptation",up,2.10056154369335,1.114458798
+25,Mb3504,PE31,PE/PPE,up,2.1560295566486998,-2.6618228719999997
+26,Mb0177,mce1C,"virulence, detoxification,adaptation",up,2.19656550390486,1.046835582
+27,Mb1577,plsB1,lipid metabolism,up,2.2560684626511898,1.76598677
+28,Mb0179,lprK,cell wall and cell processes,up,2.31989973559035,1.194253191
+29,Mb2900,mpt70,cell wall and cell processes,up,2.32342021775259,5.928506661

@@ -37,7 +37,9 @@ mycontrast=c("strain","pknH", "WT")
 dds <- DESeq(dds)
 
 #get results
-res <- results(dds, lfcThreshold=log2(2), contrast=mycontrast )
+res <- results(dds, lfcThreshold=log2(2), contrast=mycontrast)
+#write.csv(res,'pknh_de_all.csv')
+
 resultsNames(dds)
 mcols(res, use.names=TRUE)
 summary(res)
@@ -60,7 +62,7 @@ res <- na.omit(res)
 keep <- res[res$padj < 0.05,]
 keep
 tags <- as.character(sort(rownames(keep)))
-id="Mb2490" 
+
 #assay(vsd)[id,]
 #plot individual counts
 #plotCounts(dds, gene=id, intgroup="strain")
@@ -73,13 +75,14 @@ pheatmap(assay(vsd)[tags[1:20],], cluster_rows=FALSE, cluster_cols = FALSE,
          annotation_col=df["strain"], cellwidth=20, cellheight=15)
 
 #save genes
-write.csv(res,'results/de_pknh.csv')
-write.csv(keep,'results/de_pknh_filtered.csv')
+#write.csv(res,'de_pknh_all.csv')
+write.csv(keep,'de_pknh_filtered.csv')
 
 #code below is more specific stuff
 
+#tags <- c('Mb0453C','Mb0452C')
 #plot all genes in one pdf
-pdf("pknh-de-plots.pdf")
+pdf("de_pknh_plots.pdf")
 for (id in tags) {
   x<-plotCounts(dds, gene=id, intgroup="strain", returnData=TRUE)  
   p <- ggplot(x, aes(x=strain, y=count, fill=strain)) +
