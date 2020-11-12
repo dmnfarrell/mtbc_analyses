@@ -1,9 +1,6 @@
-LOCUS       FR878060                5756 bp    DNA     linear   BCT 03-APR-2015
+LOCUS       MAF_TBD1                5756 bp    DNA     linear   BCT 03-APR-2015
 DEFINITION  Mycobacterium africanum GM041182 TBD1 locus.
-ACCESSION   FR878060 REGION: 1764053..1769808
-VERSION     FR878060.1  GI:339329439
-DBLINK      BioProject: PRJEA68095
-            BioSample: SAMEA2272165
+ACCESSION   MAF_TBD1 REGION: 1764053..1769808
 
 FEATURES             Location/Qualifiers
      CDS             <1..136
@@ -42,6 +39,9 @@ FEATURES             Location/Qualifiers
                      /translation="MTPSTSDARSRRRSAEPFLWLLFSAGGMVTALVAPVLLLLFGLA
                      FPLGWLDAPDHGHLLAMVRNPITKLVVLVLVVLALFHAAHRFRFVLDHGLQLGRFDRV
                      IALWCYGMAVLGSATAGWMLLTM"
+     gene            133..510
+                     /locus_tag="MAF_15810"
+                     /gene="frdD"
      CDS             578..1186
                      /locus_tag="MAF_15820"
                      /codon_start=1
@@ -62,8 +62,11 @@ FEATURES             Location/Qualifiers
                      AVAASARASKATVYRRWPSKAELVLAAFIEGIRQVAVPPNTGNLRDDLLRLGELICRE
                      VGQHASTIRAVLVEVSRNPALNDVLQHQFVDHRKALIQYILQQAVDRGEISSAAISDE
                      LWDLLPGYLIFRSIIPNRPPTQDTVQALVDDVILPSLTRSTG"
+     gene             578..1186
+                     /locus_tag="MAF_15820"
      CDS             1325..1771
                      /locus_tag="MAF_15830"
+                     /gene="mmpS6"
                      /note="unnamed protein product"
                      /codon_start=1
                      /transl_table=11
@@ -76,6 +79,9 @@ FEATURES             Location/Qualifiers
                      /translation="MQGISVTGLVKRGWMVLVAVAVVAVAGFSVYRLHGIFGSHDTTS
                      TAGGVANDIKPFNPKQVTLEVFGAPGTVATVNYLDVDATPRQVLDTTLPWSYTITTTL
                      PAVFANVVAQGDSNSIGCRITVNGVVKDERIVNEVRAYTFCLDKSS"
+     gene             1325..1771
+                     /gene="mmpS6"
+                     /locus_tag="MAF_15830"
      CDS             1768..4671
                      /gene="mmpL6"
                      /locus_tag="MAF_15840"
@@ -109,6 +115,9 @@ FEATURES             Location/Qualifiers
                      GASFGLSVLVWQHLLGIQLYWIVLALAVILLLAVGSDYNLLLISRFKEEIGAGLNTGI
                      IRAMAGTGGVVTAAGLVFAATMSSFVFSDLRVLGQIGTTIGLGLLFDTLVVRAFMTPS
                      IAVLLGRWFWWPQRVRPRPASRMLRPYGPRPVVRELLLREGNDDPRTQVATHR"
+     gene             1768..4671
+                     /gene="mmpL6"
+                     /locus_tag="MAF_15840"
      CDS             4681..5127
                      /locus_tag="MAF_15850"
                      /codon_start=1
@@ -125,6 +134,8 @@ FEATURES             Location/Qualifiers
                      /translation="MPLSGEYAPSPLDWSREQADTYMKSGGTEGTQLQGKPVILLTTV
                      GAKTGKLRKTPLMRVEHDGQYAIVASLGGAPKNPVWYHNVVKNPRVELQDGTVTGDYD
                      AREVFGDEKAIWWQRAVAVWPDYASYQTKTDRQIPVFVLTPVRAGG"
+     gene             4681..5127
+                     /locus_tag="MAF_15850"
      CDS             5162..>5756
                      /gene="ilvA"
                      /locus_tag="MAF_15860"
@@ -150,6 +161,9 @@ FEATURES             Location/Qualifiers
                      EGAVCTAMLDLYQNEGIIAEPAGALSVAGLLEADIEPGSTVVCLISGGNNDVSRYGEV
                      LERSLVHLGLKHYFLVDFPQEPGALRRFLDDVLGPNDDITLFEYVKRNNRETGEALVG
                      IELGSAADLDGLLARMRATDIHVEALEPGSPAYRYLL"
+     gene             5162..>5756
+                     /gene="ilvA"
+                     /locus_tag="MAF_15860"
      misc_feature    5330..5371
                      /gene="ilvA"
                      /locus_tag="MAF_15860"
