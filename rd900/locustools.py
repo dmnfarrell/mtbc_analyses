@@ -26,6 +26,7 @@ from matplotlib import cm
 from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
+from Bio.SeqFeature import FeatureLocation, SeqFeature
 from Bio.Align import PairwiseAligner, substitution_matrices
 
 from dna_features_viewer import BiopythonTranslator
@@ -173,6 +174,130 @@ def load_queries(path):
     return queries
 
 from Bio.Data.CodonTable import TranslationError
+
+def orf_segments(dna, min_orf):
+    """Yield (strand, strand_seq, frame, aa_offset, protein_segment, has_stop)
+    for every stop-delimited segment in the 6 frames."""
+    rc = str(Seq(dna).reverse_complement())
+    for strand, s in ((1, dna), (-1, rc)):
+        for frame in range(3):
+            n = (len(s) - frame) // 3
+            sub_seq = s[frame:frame + 3 * n]
+
+            # If the translation hits invalid characters, safely skip this entire frame
+            try:
+                prot = str(Seq(sub_seq).translate(table=11))
+            except TranslationError:
+                continue
+
+            offset = 0
+            for seg in prot.split("*"):
+                has_stop = offset + len(seg) < len(prot)
+                if len(seg) >= min_orf:
+                    yield strand, s, frame, offset, seg, has_stop
+                offset += len(seg) + 1
+    return
+
+def find_hits(dna, queries, index, aligner, min_orf, min_kmers, min_id, min_cov, min_cov_report):
+    L = len(dna)
+    raw_hits = []
+    try:
+        segments = orf_segments(dna, min_orf)
+    except Exception:
+        print('orf_segments error - something is wrong')
+        return []
+
+    for strand, s, frame, offset, seg, has_stop in segments:
+        counts = Counter()
+        for i in range(len(seg) - K + 1):
+            for qi in index.get(seg[i:i + K], ()):
+                counts[qi] += 1
+        for qi, c in counts.items():
+            if c < min_kmers:
+                continue
+            gene, product, q = queries[qi]
+            aln = aligner.align(q, seg)[0]
+            qblocks, tblocks = aln.aligned
+            aligned = sum(e - b for b, e in qblocks)
+            if aligned == 0:
+                continue
+            matches = sum(a == b
+                          for (qs, qe), (ts, te) in zip(qblocks, tblocks)
+                          for a, b in zip(q[qs:qe], seg[ts:te]))
+            ident, cov = matches / aligned, aligned / len(q)
+
+            if ident < min_id or cov < min_cov_report:
+                continue
+
+            q0, t0 = int(qblocks[0][0]), int(tblocks[0][0])
+            expected = t0 - q0
+
+            def codon(p):
+                a = frame + 3 * (offset + p)
+                return s[a:a + 3]
+
+            starts = [p for p in range(max(0, expected - 10), t0 + 1) if codon(p) in STARTS]
+            p = min(starts, key=lambda x: (abs(x - expected), x)) if starts else t0
+
+            protein = seg[p:]
+            if codon(p) in STARTS:
+                protein = "M" + protein[1:]
+
+            start_nt = frame + 3 * (offset + p)
+            end_nt = frame + 3 * (offset + len(seg)) + (3 if has_stop else 0)
+            if strand == 1:
+                fs, fe = start_nt, end_nt
+            else:
+                fs, fe = L - end_nt, L - start_nt
+
+            raw_hits.append(dict(start=int(fs), end=int(fe), strand=strand, score=aln.score,
+                                 gene=gene, product=product, protein=protein,
+                                 ident=ident, cov=cov, qlen=len(q),
+                                 qstart=q0, qend=q0 + aligned))
+
+    kept = []
+    for h in sorted(raw_hits, key=lambda h: -h["score"]):
+        clash_other_gene = False
+        duplicate = False
+        for k in kept:
+            ov = min(h["end"], k["end"]) - max(h["start"], k["start"])
+            if ov <= 0.5 * min(h["end"] - h["start"], k["end"] - k["start"]):
+                continue
+            if k["gene"] != h["gene"]:
+                clash_other_gene = True
+                break
+            if abs(h["qstart"] - k["qstart"]) < 5 and abs(h["qend"] - k["qend"]) < 5:
+                duplicate = True
+                break
+        if not clash_other_gene and not duplicate:
+            kept.append(h)
+
+    by_gene = defaultdict(list)
+    for h in kept:
+        by_gene[h["gene"]].append(h)
+
+    for gene, hits_for_gene in by_gene.items():
+        if len(hits_for_gene) == 1:
+            h = hits_for_gene[0]
+            h["status"] = "complete" if h["cov"] >= min_cov else "partial"
+            h["combined_cov"] = h["cov"]
+            h["n_fragments"] = 1
+        else:
+            ivs = sorted((h["qstart"], h["qend"]) for h in hits_for_gene)
+            merged = []
+            for s0, e0 in ivs:
+                if merged and s0 <= merged[-1][1]:
+                    merged[-1] = (merged[-1][0], max(merged[-1][1], e0))
+                else:
+                    merged.append((s0, e0))
+            combined_aa = sum(e0 - s0 for s0, e0 in merged)
+            combined_cov = combined_aa / hits_for_gene[0]["qlen"]
+            for h in hits_for_gene:
+                h["combined_cov"] = combined_cov
+                h["n_fragments"] = len(hits_for_gene)
+                h["status"] = "frameshift_candidate" if combined_cov >= min_cov else "partial"
+
+    return sorted(kept, key=lambda h: h["start"])
 
 def write_gbk(rec_id, description, dna, hits, outdir, stem):
 
@@ -352,7 +477,8 @@ def _cluster_by_distance(dist_path, threshold):
     return {node: cid for cid, comp in enumerate(nx.connected_components(G)) for node in comp}
 
 def select_representatives(
-	gbk_dir, loci_fasta_dir, out_dir="structure_results", annot_repr_dir="annot_repr",
+	gbk_dir, fasta_file, out_dir="structure_results", 
+    annot_repr_dir="annot_repr", loci_fasta_dir="split_loci", 
 	mash_threshold=0.01, normalize_gene_names=True,
 ):
 	"""
@@ -364,7 +490,7 @@ def select_representatives(
 	"""
 
 	os.makedirs(out_dir, exist_ok=True)
-	
+	split_fasta(fasta_file, loci_fasta_dir)
 	# Create the output folder for representative GenBank files
 	if os.path.exists(annot_repr_dir):
 		shutil.rmtree(annot_repr_dir)
@@ -459,11 +585,6 @@ def order_from_structure_summary(
         print(f"[warn] {len(missing)} gbk files not found, e.g. {missing[:3]}")
 
     return gbk_paths, df
-
-gbk_ordered, order_df = order_from_structure_summary(
-    "structure_results/structure_summary.csv",
-    gbk_dir="annot_new",
-)
 
 def plot_locus_comparison(
     gbk_paths,
