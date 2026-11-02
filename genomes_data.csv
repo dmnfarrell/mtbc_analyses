@@ -1,4 +1,4 @@
-ACCESSION,PAIRED,LINEAGE,ORIGIN,BIOPROJECT,BIOSAMPLE,Reads lenght (bp),LINK1,LINK2,REFERENCE
+Run,paired,lineage,origin,BioProject,BioSample,read_length,link1,link2,ref
 ERR2642516,no,M. caprae,NA,PRJEB27266,"	
 SAMEA4732081",51,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR264/006/ERR2642516/ERR2642516.fastq.gz,,Brites et al. 2018
 ERR551023,yes,M. caprae,Congo,PRJEB9545,SAMEA2533642,150,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR551/ERR551023/ERR551023_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR551/ERR551023/ERR551023_2.fastq.gz,Malm et al. 2017
